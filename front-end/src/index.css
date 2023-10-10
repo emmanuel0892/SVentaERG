@@ -1,3 +1,123 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.h-full {
+  --tw-bg-opacity: 1;
+  background-color: #f4dfe4;
+  padding-top: 10px;
+  border-style: groove;
+  border-width: revert;
+  border-color: black;
+}
+
+#nav-global{
+  background-color: #B4A7D6 !important;
+  border-style: groove;
+  border-width: revert;
+  border-color: black;
+}
+
+#nomUserMenu{
+  font-size: 17px;
+}
+
+.group{
+  background-color: #ECBAD0;
+  border-style: groove;
+  border-width: revert;
+  border-color:black;
+}
+
+#footer-home{
+  background-color: #D5A6BD;
+  position: absolute;
+  padding: auto;
+  bottom: auto;
+  width:-webkit-fill-available;
+  border-style: groove;
+  border-width: revert;
+  border-color: black;
+  margin-top: auto;
+}
+
+#divPrincipal {
+background-color: #F3E6EF;
+height: 100vh;
+}
+
+.BodyMenu {
+  height: 100vh;
+  background-image: url('/src/Resources/img/LANAS\ Y\ PUNTOS.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#dropdown-user {
+  border-style: groove;
+  border-width: revert;
+  border-color: black;
+  background-color: #ffdea0;
+}
+
+#PrincipalVentas {
+  height: 100vh;
+  padding-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#tablaVenta1 {
+  width: 100vmax;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-self: center;
+  margin-right: 10px;
+  border-color: black;
+  border-style: groove;
+  border-width: revert;
+  flex-direction: column;
+  background-color: #EECFDE;
+}
+
+#tablaVenta2 {
+  height: auto;
+  width: 100vmax;
+  display: flex;
+  position: relative;
+  justify-self: center;
+  margin-left: 10px;
+}
+
+.grid-flow-col {
+  display: flex;
+  position: relative;
+}
+
+.TablaProVen {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100vh;
+  border-width: revert;
+  border-style: groove;
+  border-color: black;
+  border-radius: 12px;
+}
