@@ -14,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-.h-full {
+#menuSidebar {
   --tw-bg-opacity: 1;
   background-color: #f4dfe4;
   padding-top: 10px;
@@ -120,4 +120,70 @@ height: 100vh;
   border-style: groove;
   border-color: black;
   border-radius: 12px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.TotalesVen {
+  width: 100vh;
+  padding-bottom: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#Totales {
+  width: 100vh;
+  display: flex;
+  position: relative;
+}
+
+#cardTotales {
+  display: flex;
+  position: relative;
+  border-color: black;
+  border-width: revert;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#txtTotales {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+#txtMontos {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+#apliDesc {
+  width: inherit;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DTotalesVen {
+  width: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#divCard {
+  width: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Card } from 'flowbite-react';
 import { Table } from 'flowbite-react';
 
 export default function VentaNueva() {
@@ -16,16 +16,16 @@ export default function VentaNueva() {
                         <div className='grid'>
                             <div className='flex col'>
                                 <div className='flex mr-24'>
-                                    <label className='mr-2' htmlFor=""><strong>Cod. Vendedor: </strong></label>
-                                    <input className='w-14 h-8' type="text" />
+                                    <label className='codVend mr-2'><strong>Cod. Vendedor: </strong></label>
+                                    <input className='w-14 h-8 rounded-lg' type='number' />
                                 </div>
                                 <div className='flex mr-24'>
-                                    <label className='mr-2' htmlFor=""><strong>Vendedor: </strong></label>
-                                    <input className='w-56 h-8' type="text" />
+                                    <label className='mr-2'><strong>Vendedor: </strong></label>
+                                    <input className='w-56 h-8 bg-gray-200 rounded-lg' type="text" disabled/>
                                 </div>
                                 <div className='flex'>
-                                    <label className='mr-2' htmlFor=""><strong>ID Venta: </strong></label>
-                                    <input className='w-14 h-8' type="text" />
+                                    <label className='mr-2'><strong>ID Venta: </strong></label>
+                                    <input className='w-14 h-8 bg-gray-200 rounded-lg' type="text" disabled/>
                                 </div>
                             </div>
                         </div>
@@ -33,30 +33,30 @@ export default function VentaNueva() {
                         <div className='TablaProVen'>
                             <Table responsive hoverable className='tablapro'>
                             <Table.Head>
-                                <Table.HeadCell>
-                                Código
+                                <Table.HeadCell className='bg-gray-200'>
+                                COD
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 Nom. Producto
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 Marca
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 Precio Uni
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 Cant
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 Total
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 <span className="sr-only">
                                     Editar
                                 </span>
                                 </Table.HeadCell>
-                                <Table.HeadCell>
+                                <Table.HeadCell className='bg-gray-200'>
                                 <span className="sr-only">
                                     Eliminar
                                 </span>
@@ -272,8 +272,62 @@ export default function VentaNueva() {
                             </Table>
                         </div>
 
-                        <div className='TotalesVen'>
-                            <p>totales</p>
+                        <div className='TotalesVen grid-rows-2'>
+
+                            <div className='flex rounded gap-0'
+                                id='Totales'
+                            >
+                                
+                                <div className='flex' id='apliDesc'>
+                                    <label><strong>Aplicar Descuento: </strong>
+                                    <a href="#"></a>
+                                    </label>
+                                </div>
+
+                                <div className='flex' id='divCard'>
+                                    <Card
+                                        className="max-w-sm"
+                                        id='cardTotales'
+                                        >
+                                        <div className='flex'>
+                                            <div className='flex' id='txtTotales'>
+                                                <label><strong>DESCUENTOS</strong></label>
+                                                <label><strong>Exento</strong></label>
+                                                <label><strong>Neto</strong></label>
+                                                <label><strong>IVA 19%</strong></label>
+                                                <br />
+                                                <label><strong>TOTAL</strong></label>
+                                            </div>
+                                            <div className='flex' id='txtMontos'>
+                                                <div className='flex'>
+                                                    <label className='ml-8'><strong>$</strong></label>
+                                                    <label className='ml-8'><strong>0</strong></label>
+                                                </div>
+                                                <div className='flex'>
+                                                    <label  className='ml-8'><strong>$</strong></label>
+                                                    <label className='ml-8'><strong>0</strong></label>
+                                                </div>
+                                                <div className='flex'>
+                                                    <label className='ml-8'><strong>$</strong></label>
+                                                    <label className='ml-8'><strong>0</strong></label>
+                                                </div>
+                                                <div className='flex'>
+                                                    <label className='ml-8'><strong>$</strong></label>
+                                                    <label className='ml-8'><strong>0</strong></label>
+                                                </div>
+                                                <br />
+                                                <div className='flex'>
+                                                    <label className='ml-8'><strong>$</strong></label>
+                                                    <label className='ml-8'><strong>0</strong></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </Card>
+                                </div>
+
+                            </div>
+
                         </div>
                         
                         
