@@ -194,7 +194,7 @@ export default function MenuAdmin() {
 
         { /* INGRESAR LOS COMPONENTES AQUÍ */ }
         
-            <VentaNueva />
+
 
         </div>
 
